@@ -1,7 +1,83 @@
-
-
-/* Created by Mark Benjamin */
-
-body {
-    
-}
+<style>
+        *{
+            outline:none;
+        }
+        body {
+            height:100%;
+            width:100%;
+            padding:0;
+            margin:0;
+            background-size:cover;
+            color:white;
+            font-family: sans-serif;
+            outline:none;
+            background-color:darkcyan; /*remove*/
+        }
+        
+				h2{
+       				text-align: center;
+					}
+        #initializer {
+            height:100%;
+            margin:0;
+            color:white;
+            font-family:sans-serif;
+            padding:5%;
+            
+        }
+        
+        #start {
+            margin:0;
+            background-color:darkcyan;
+            color:white;
+            padding:2%;
+            border:1px solid white;
+            border-radius:2px;
+        }
+        
+        ul li {
+            list-style: none;
+        }
+        
+        button {
+            margin:0;
+            background-color:darkcyan;
+            color:white;
+            padding:2%;
+            border:1px solid white;
+            border-radius:2px;
+        }
+        
+        .quiz {
+            width:80%;
+            margin:auto;
+        }
+        
+        input {
+            border:2px solid white;
+            border-radius: 2px;
+            background: darkcyan;
+            color:white;
+            padding-left:4%;
+        }
+        
+        #results {
+            width:80%;
+            margin:auto;
+            color:darkcyan;
+        }
+        
+        #results p {
+            padding-left: 3.5%;
+        }
+        
+        #countPrint {
+           background-color:white;
+            border:1px solid darkcyan;
+            border-radius:2px;
+            color:darkcyan;
+            padding:1.2%;
+            padding-left:2%;
+        }
+        
+    </style>
