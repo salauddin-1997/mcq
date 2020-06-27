@@ -1,6 +1,6 @@
-<style>
+
         *{
-            outline:none;
+            outline:none
         }
         body {
             height:100%;
@@ -13,9 +13,21 @@
             outline:none;
             background-color:darkcyan; /*remove*/
         }
+
+				.navbar{
+							background-color: bisque;
+					}
+
+ 				.navbar .navbar-toggler{
+			
+				background-color: white;
+					}
+
         
 				h2{
+							margin: 20px 0;
        				text-align: center;
+				font-size: 30px;
 					}
         #initializer {
             height:100%;
@@ -76,8 +88,39 @@
             border:1px solid darkcyan;
             border-radius:2px;
             color:darkcyan;
-            padding:1.2%;
+            padding:1.2%;h
             padding-left:2%;
-        }
-        
-    </style>
+					}
+    
+
+
+
+.footer-contact ul{
+				
+}
+.footer-contact .nav{
+			background-color: darkslategray;
+				border-radius: 5%;
+				width: 48.9%;
+			position : absolute;
+				margin-top: 50%;
+				left: 26%;
+}
+
+  .footer-contact ul li{
+				
+}
+
+  .footer-contact ul li i{
+				color: white;
+				font-size: 30px;
+				padding: 20.1px;
+				transition: all 0.5s;
+		
+}
+
+  .footer-contact ul li i:hover{
+				color: black;
+				background-color: bisque;
+				border-radius: 5%;
+}
