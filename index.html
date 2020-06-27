@@ -1,0 +1,390 @@
+<!-- Created by Mark Benjamin -->
+
+<!--By Mark Benjamin ... Sololearn -->
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+    <style>
+        *{
+            outline:none;
+        }
+        body {
+            height:100%;
+            width:100%;
+            padding:0;
+            margin:0;
+            background-size:cover;
+            color:white;
+            font-family: sans-serif;
+            outline:none;
+            background-color:darkcyan; /*remove*/
+        }
+        
+        #initializer {
+            height:100%;
+            margin:0;
+            color:white;
+            font-family:sans-serif;
+            padding:5%;
+            
+        }
+        
+        #start {
+            margin:0;
+            background-color:darkcyan;
+            color:white;
+            padding:2%;
+            border:1px solid white;
+            border-radius:2px;
+        }
+        
+        ul li {
+            list-style: none;
+        }
+        
+        button {
+            margin:0;
+            background-color:darkcyan;
+            color:white;
+            padding:2%;
+            border:1px solid white;
+            border-radius:2px;
+        }
+        
+        .quiz {
+            width:80%;
+            margin:auto;
+        }
+        
+        input {
+            border:2px solid white;
+            border-radius: 2px;
+            background: darkcyan;
+            color:white;
+            padding-left:4%;
+        }
+        
+        #results {
+            width:80%;
+            margin:auto;
+            color:darkcyan;
+        }
+        
+        #results p {
+            padding-left: 3.5%;
+        }
+        
+        #countPrint {
+           background-color:white;
+            border:1px solid darkcyan;
+            border-radius:2px;
+            color:darkcyan;
+            padding:1.2%;
+            padding-left:2%;
+        }
+        
+    </style>
+    <title>Quiz App</title>
+    </head>
+    <!--By Mark Benjamin ... Sololearn -->
+
+    <body onload="all()">
+        
+        <!--  Initializer      -->
+        <div id="initializer">
+            <p>In this section, you will be required to answer a few questions. Put the right answer choice in the input provided. At the end, you will be told how you performed!</p>
+            <button onclick="first()" id="start">Get Started</button>
+        </div>
+        
+        <!--  Question one     -->
+       <div class="quiz">
+       <p>Which is not a programming language??</p>
+           <ul>
+               <li>A: Python</li>
+               <li>B: Django</li>
+               <li>C: HTML</li>
+               <li>D: Go</li>
+           </ul>
+           <input id="quiz1" type="text">
+           <br/><br/>
+           <button onclick="second()">Next Quiz</button>
+        </div>
+        
+
+
+        <!--  Question two     -->
+       <div class="quiz">
+       <p>Which is not a data type?</p>
+           <ul>
+               <li>A: String</li>
+               <li>B: Character</li>
+               <li>C: Float</li>
+               <li>D: Bowline</li>
+           </ul>
+           <input id="quiz2" type="text">
+           <br/><br/>
+           <button onclick="third()">Next Quiz</button>
+        </div>
+
+
+
+        
+        <!--  Question three     -->
+       <div class="quiz">
+       <p>Which is an incriment operator of b?</p>
+           <ul>
+               <li>A: +b</li>
+               <li>B: -b-</li>
+               <li>C: b++</li>
+               <li>D: +b+</li>
+           </ul>
+           <input id="quiz3" type="text">
+           <br/><br/>
+           <button onclick="fourth()">Next Quiz</button>
+        </div>
+        
+
+
+          <!--  Question fourth     -->
+       <div class="quiz">
+       <p> Is an incriment operator of b?</p>
+           <ul>
+               <li>A: cc</li>
+               <li>bb: -b-</li>
+               <li>C:bb--</li>
+               <li>ccc</li>
+           </ul>
+           <input id="quiz4" type="text">
+           <br/><br/>
+           <button  onclick="fifth()">Next Quiz</button>
+        </div>
+
+
+
+
+        <!--  Question fifth     -->
+       <div class="quiz">
+       <p>Incriment operator of b?</p>
+           <ul>
+               <li>B: +b</li>
+               <li>V: -b-</li>
+               <li>SD: b++</li>
+               <li>G: +b+</li>
+           </ul>
+           <input id="quiz5" type="text">
+           <br/><br/>
+           <button id="submit" onclick="mark()">Submit</button>
+        </div>
+        
+
+
+        
+        <!--   Results section     -->
+        <div id="results">
+            <p id="countPrint"></p>
+            <p id="confirm1"></p>
+            <p id="confirm2"></p>
+            <p id="confirm3"></p>
+            <p id="confirm4"></p>
+            <p id="confirm5"></p>
+        </div>
+        <br/>
+        
+
+
+    <!--By Mark Benjamin ... Sololearn -->
+
+        <script>
+            
+            function all() {
+                var arr = document.getElementsByClassName("quiz");
+                for (i=0;i<arr.length;i++){
+                    arr[i].style.display = "none";
+                }
+                var submit = document.getElementById("submit");
+                submit.style.display = "none";
+                var results = document.getElementById("results");
+                results.style.display = "none";
+                var arr = document.getElementsByTagName("body");
+                arr[0].style.backgroundColor = "darkcyan";
+                
+            }
+            
+            function first() {
+                var arr = document.getElementsByClassName("quiz");
+                arr[0].style.display = "block";
+                var submit = document.getElementById("submit");
+                submit.style.display = "none";
+                var initializer = document.getElementById("initializer");
+                initializer.style.display = "none";
+            }
+            
+            
+            function second() {
+                var arr = document.getElementsByClassName("quiz");
+                arr[0].style.display = "none";
+                arr[1].style.display = "block";
+                var submit = document.getElementById("submit");
+                submit.style.display = "none";
+                var initializer = document.getElementById("initializer");
+                initializer.style.display = "none";
+            }
+            
+            
+            function third() {
+                var arr = document.getElementsByClassName("quiz");
+                arr[1].style.display = "none";
+                arr[2].style.display = "block";
+                var submit = document.getElementById("submit");
+                submit.style.display = "block";
+                var initializer = document.getElementById("initializer");
+                initializer.style.display = "none";
+            }
+            
+            function fourth() {
+                var arr = document.getElementsByClassName("quiz");
+                arr[2].style.display = "none";
+                arr[3].style.display = "block";
+                var submit = document.getElementById("submit");
+                submit.style.display = "block";
+                var initializer = document.getElementById("initializer");
+                initializer.style.display = "none";
+            }
+            
+            function fifth() {
+                var arr = document.getElementsByClassName("quiz");
+                arr[3].style.display = "none";
+                arr[4].style.display = "block";
+                var submit = document.getElementById("submit");
+                submit.style.display = "block";
+                var initializer = document.getElementById("initializer");
+                initializer.style.display = "none";
+            }
+
+            
+           
+            
+            
+            function mark(){
+                var quiz1=document.getElementById("quiz1").value;
+                var quiz2=document.getElementById("quiz2").value;
+                var quiz3=document.getElementById("quiz3").value;
+                var quiz4=document.getElementById("quiz4").value;
+                var quiz5=document.getElementById("quiz5").value;
+                
+                var confirm1 = document.getElementById("confirm1");
+                var confirm2 = document.getElementById("confirm2");
+                var confirm3 = document.getElementById("confirm3");
+                var confirm4 = document.getElementById("confirm4");
+                var confirm5 = document.getElementById("confirm5");
+                
+                var countPrint = document.getElementById("countPrint");
+
+
+                
+                var arr = document.getElementsByClassName("quiz");
+                arr[4].style.display = "none";
+                var submit = document.getElementById("submit");
+                submit.style.display = "none";
+                var results = document.getElementById("results");
+                results.style.display = "block";
+                var arr = document.getElementsByTagName("body");
+                arr[0].style.backgroundColor = "white";
+                arr[0].style.color = "darkcyan";
+
+
+                
+                var count = 0;
+                var quizNo = 10; //Number of quizzes
+                
+
+				// Question one
+                var answer = "B";
+                var alternative = "b";
+                var whichQuiz = "Quiz 1: ";
+
+                if (quiz1 == answer || quiz1 == alternative) {
+                    confirm1.innerHTML = whichQuiz + "Correct";
+                    count ++;
+                }
+                else {
+                    confirm1.innerHTML = whichQuiz + "Wrong";
+                }
+                
+
+				// Question two
+                var answer = "D";
+                var alternative = "d";
+                var whichQuiz = "Quiz 2: ";
+
+                if (quiz2 == answer || quiz2 == alternative) {
+                    confirm2.innerHTML = whichQuiz + "Correct";
+                    count ++;
+                }
+                else {
+                    confirm2.innerHTML = whichQuiz + "Wrong";
+                }
+
+
+                // Question three
+                var answer = "C";
+                var alternative = "c";
+                var whichQuiz = "Quiz 3: ";
+
+                if (quiz3 == answer || quiz3 == alternative) {
+                    confirm3.innerHTML = whichQuiz + "Correct";
+                    count ++;
+                }
+                else {
+                    confirm3.innerHTML = whichQuiz + "Wrong";
+                }
+                
+
+				// Question four
+                var answer = "D";
+                var alternative = "d";
+                var whichQuiz = "Quiz 4: ";
+
+                if (quiz4 == answer || quiz4 == alternative) {
+                    confirm4.innerHTML = whichQuiz + "Correct";
+                    count ++;
+                }
+                else {
+                    confirm4.innerHTML = whichQuiz + "Wrong";
+                }
+
+
+                // Question five
+                var answer = "C";
+                var alternative = "c";
+                var whichQuiz = "Quiz 5: ";
+
+                if (quiz5 == answer || quiz5 == alternative) {
+                    confirm5.innerHTML = whichQuiz + "Correct";
+                    count ++;
+                }
+                else {
+                    confirm5.innerHTML = whichQuiz + "Wrong";
+                }
+                
+
+
+
+
+                countPrint.innerHTML = "You got "+ count+ " of "+quizNo+" questions."
+                
+            }
+            
+            
+            
+            
+            
+        </script>
+        <!--By Mark Benjamin ... Sololearn -->
+
+    </body>
+</html>
