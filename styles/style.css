@@ -40,8 +40,8 @@
         
         #start {
             margin:0;
-            background-color:darkcyan;
-            color:white;
+            background-color:bisque;
+            color:black;
             padding:2%;
             border:1px solid white;
             border-radius:2px;
@@ -53,8 +53,8 @@
         
         button {
             margin:0;
-            background-color:darkcyan;
-            color:white;
+            background-color:bisque;
+            color:black;
             padding:2%;
             border:1px solid white;
             border-radius:2px;
